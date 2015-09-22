@@ -1,10 +1,8 @@
-wildfly-ejbremote-demo
-======================
+wildfly-cdiscopeinit-demo
+=========================
 
-Demo and Test for ejb remote invocation on WildFly.
+Demo and Test for interceptor invocation on CDI scope initialized observer methods in WildFly.
 
 Issues covered: 
 
-https://issues.jboss.org/browse/WFLY-2717: Remote EJB call does not deliver serverside thrown exception correctly
-
-https://issues.jboss.org/browse/WFLY-3964: Remoe  EJB call does not deliver EJBAccessException correctly
+https://issues.jboss.org/browse/WFLY-5235: CDI interceptors are not called when invoking observer method
