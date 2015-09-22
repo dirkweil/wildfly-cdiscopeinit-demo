@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+  <h:form>
+    <h:panelGrid columns="4">
+      <h:outputText value="EvictBean1" />
+      <h:outputText value="#{beanEvictPresenter.evictableBean1.class}"/>
+      <h:outputText value="#{beanEvictPresenter.evictableBean1.created}">
+        <f:convertDateTime type="both" dateStyle="short" timeStyle="long" />
+      </h:outputText>
+      <h:commandButton action="#{beanEvictPresenter.evictBean1()}" value="evict" />
+
+      <h:outputText value="EvictBean2a" />
+      <h:outputText value="#{beanEvictPresenter.evictableBean2a.class}"/>
+      <h:outputText value="#{beanEvictPresenter.evictableBean2a.created}">
+        <f:convertDateTime type="both" dateStyle="short" timeStyle="long" />
+      </h:outputText>
+      <h:commandButton action="#{beanEvictPresenter.evictBean2a()}" value="evict" />
+      
+      <h:outputText value="EvictBean2b" />
+      <h:outputText value="#{beanEvictPresenter.evictableBean2b.class}"/>
+      <h:outputText value="#{beanEvictPresenter.evictableBean2b.created}">
+        <f:convertDateTime type="both" dateStyle="short" timeStyle="long" />
+      </h:outputText>
+      <h:commandButton action="#{beanEvictPresenter.evictBean2b()}" value="evict" />
+      
+      <h:outputText value="EvictBean2c" />
+      <h:outputText value="#{beanEvictPresenter.evictableBean2c.class}"/>
+      <h:outputText value="#{beanEvictPresenter.evictableBean2c.created}">
+        <f:convertDateTime type="both" dateStyle="short" timeStyle="long" />
+      </h:outputText>
+      <h:commandButton action="#{beanEvictPresenter.evictBean2c()}" value="evict" />
+      
+      <h:commandButton value="refresh" />
+    </h:panelGrid>
+  </h:form>
+</body>
+</html>

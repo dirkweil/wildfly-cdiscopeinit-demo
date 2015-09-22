@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+  bean-discovery-mode="all" version="1.1">
+  <!-- <beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd"> -->
+  <alternatives>
+<!--     <class>de.gedoplan.seminar.cdi.demo.basics.service.impl.MockCreditCardService</class> -->
+
+<!--     <stereotype>de.gedoplan.seminar.cdi.demo.basics.util.stereotype.Mock</stereotype> -->
+    
+  <!-- TRAINER... -->
+<!--     <class>de.gedoplan.seminar.cdi.exercise.repository.impl.CocktailMockRepository</class> -->
+  <!-- ...TRAINER -->
+  </alternatives>
+
+  <interceptors>
+<!--     <class>de.gedoplan.seminar.cdi.exercise.interceptor.TraceCallInterceptor</class> -->
+<!--     <class>de.gedoplan.seminar.cdi.demo.intercept.interceptor.TransactionRequiredInterceptor</class> -->
+  </interceptors>
+
+  <decorators>
+<!--     <class>de.gedoplan.seminar.cdi.demo.intercept.decorator.CountrySortDecorator</class> -->
+
+  <!-- TRAINER... -->
+<!--     <class>de.gedoplan.seminar.cdi.exercise.decorator.NonAlcoholicCocktailRepository</class> -->
+  <!-- ...TRAINER -->
+  </decorators>
+</beans>

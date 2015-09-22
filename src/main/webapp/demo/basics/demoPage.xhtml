@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+  <title>demoPage.xhtml</title>
+</h:head>
+<h:body>
+  <h:outputText value="#{demoPresenter.helloWorld}" />
+
+  <hr />
+
+  <h:outputLabel value="Begrüßung: " for="greeting" />
+  <h:outputText value="#{demoPresenter.greeting}" id="greeting" />
+  <br />
+  <h:outputLabel value="erzeugt von: " for="greeterClassName" />
+  <h:outputText value="#{demoPresenter.greeterClassName}" id="greeterClassName" />
+
+  <hr />
+
+  <h:form>
+    <h:outputLabel value="Kreditkarte: " for="cardNo" />
+    <h:inputText value="#{demoPresenter.cardNo}" id="cardNo" size="20" />
+    <h:outputLabel value=" Eigentümer: " for="cardOwner" />
+    <h:inputText value="#{demoPresenter.cardOwner}" id="cardOwner" size="20" />
+    <h:outputLabel value=" gültig bis: " for="cardValidToMonth" />
+    <h:inputText value="#{demoPresenter.cardValidToMonth}" id="cardValidToMonth" size="3" />
+    <h:outputLabel value="/" for="cardValidToYear" />
+    <h:inputText value="#{demoPresenter.cardValidToYear}" id="cardValidToYear" size="5" />
+    <h:outputLabel value=" Prüfziffern: " for="cardCheckNo" />
+    <h:inputText value="#{demoPresenter.cardCheckNo}" id="cardCheckNo" size="5" />
+    <h:commandButton value="prüfen" action="#{demoPresenter.cardCheck()}" />
+    <h:outputText value="#{demoPresenter.cardValidMessage}" />
+  </h:form>
+
+  <hr />
+
+  <h:outputLabel value="DB: " for="dbDescription" />
+  <h:outputText value="#{demoPresenter.dbDescription}" id="dbDescription" />
+  <br />
+  <h:outputLabel value="TempDB: " for="tempDbDescription" />
+  <h:outputText value="#{demoPresenter.tempDbDescription}" id="tempDbDescription" />
+</h:body>
+</html>

@@ -1,0 +1,13 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+  <title>instanceDemo.xhtml</title>
+</h:head>
+<h:body>
+  <h:outputText value="Beans des Typs GreetingBean:" />
+  <h:dataTable var="b" value="#{progApiPresenter.greetingServiceClasses}">
+    <h:column>
+      <h:outputText value="#{b}" />
+    </h:column>
+  </h:dataTable>
+</h:body>
+</html>
